@@ -1,0 +1,10 @@
+column table "Data" (
+    "SensorID" NVARCHAR(512)  unique not null,
+    "SalesOrg" NVARCHAR(512) ,
+    "SalesOrder" NVARCHAR(512),
+    "Date" DATE,
+    "Time" DATE,
+    "OrderOverallStatus" NVARCHAR(512),
+    "DeliveryStatus" NVARCHAR(512),
+    "Rejection" NVARCHAR(512)
+)

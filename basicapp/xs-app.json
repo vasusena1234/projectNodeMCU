@@ -1,0 +1,14 @@
+{
+    "welcomeFile": "/index.html",
+    "authenticationMethod": "route",
+  
+    "routes": [
+      
+      {
+        "source": "/salesOrderData/(.*)$",
+        "authenticationType": "none",
+        "destination": "srv_api"
+      }
+    ]
+  }
+  

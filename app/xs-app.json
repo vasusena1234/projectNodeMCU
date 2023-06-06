@@ -1,0 +1,16 @@
+{
+  "welcomeFile": "/index.html",
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "/salesData/(.*)",
+      "authenticationType": "none",
+      "destination": "srv_api"
+    },
+    {
+      "source": "^/sensorData/(.*)$",
+      "authenticationType": "none",
+      "destination": "ui5"
+    }
+  ]
+}

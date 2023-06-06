@@ -1,0 +1,13 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+>
+    <Dialog id="d1" title="Sensor Details" contentWidth="300px" contentHeight="200px">
+    <content>
+      <FlexBox id="f1" alignItems="Start" fitContainer="true">
+        <Label id="l1" text="Sensor ID : " labelFor="tt1" />
+        <Text id="tt1" text="{dialog>/SensorID}" />
+      </FlexBox>
+    </content>
+  </Dialog>
+</c:FragmentDefinition>

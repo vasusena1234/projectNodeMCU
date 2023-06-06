@@ -1,0 +1,66 @@
+<mvc:View
+	controllerName="basicapp.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0">
+    <App id="app">
+        <pages>
+            <Page id="page" title="Notifications" >
+                <Table
+                    id="tabid"
+                    class="sapUiResponsiveMargin"
+                    width="auto"
+                    items="{
+                            path : 'notification>/sales'     
+                            }">
+                    <columns>
+                        <Column id="c0">
+                            <Text id="t0" text="{i18n>column0}"/>
+                        </Column>
+                        <Column id="c1">
+                            <Text id="t1" text="{i18n>column1}"/>
+                        </Column>
+                        <Column id="c2">
+                                <Text id="t2" text="{i18n>column2}"/>
+                        </Column>
+                        <Column id="c3">
+                                <Text id="t3" text="{i18n>column3}"/>
+                        </Column>
+                        <Column id="c4">
+                                <Text id="t4" text="{i18n>column4}"/>
+                        </Column>
+                        <Column id="c5">
+                                <Text id="t5" text="{i18n>column5}"/>
+                        </Column>
+                        <Column id="c6">
+                            <Text id="t6" text="{i18n>column6}"/>
+                        </Column>
+                        <Column id="c7">
+                                <Text id="t7" text="{i18n>column7}"/>
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem
+                            id="cl1"
+                            type="Navigation"
+                            press="onPress"
+                            >
+                            <cells>
+                                <Text id="t8" text="{notification>SensorID}"></Text>
+                                <Text id="t9" text="{notification>SalesOrg}"></Text>
+                                <Text id="t10" text="{notification>SalesOrder}"></Text>
+                                <Text id="t11" text="{notification>OrderOverallStatus}"></Text>
+                                <Text id="t12" text="{notification>DeliveryStatus}"></Text>
+                                <Text id="t13" text="{notification>Rejection}"></Text>
+                                <Text id="t14" text="{notification>Date}"></Text>
+                                <Text id="t15" text="{notification>Time}"></Text>
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
